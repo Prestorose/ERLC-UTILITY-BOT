@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Professional Discord Utility Bot for ERLC communities",
   "main": "index.js",
+  "author": "SEJED-DEV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SEJED-DEV/ERLC-UTILITY-BOT.git"
+  },
   "scripts": {
     "start": "node index.js"
   },

@@ -1,21 +1,28 @@
 # ERLC Utility Bot (v1.0.0)
 
-[![GitHub License](https://img.shields.io/github/license/SEJED-DEV/ERLC-UTILITY-BOT?color=green)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT/blob/main/LICENSE)
-[![GitHub Repo Size](https://img.shields.io/github/repo-size/SEJED-DEV/ERLC-UTILITY-BOT)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/SEJED-DEV/ERLC-UTILITY-BOT)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT)
+[![GitHub License](https://img.shields.io/github/license/SEJED-DEV/ERLC-UTILITY-BOT?color=blue)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT/blob/main/LICENSE.md)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/SEJED-DEV/ERLC-UTILITY-BOT?color=blue)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/SEJED-DEV/ERLC-UTILITY-BOT?color=blue)](https://github.com/SEJED-DEV/ERLC-UTILITY-BOT)
+[![Discord Support](https://img.shields.io/badge/Discord-Support-7289DA?logo=discord&logoColor=white)](https://discord.gg/zYvqDB5MWB)
 
-A professional, enterprise-grade Discord bot designed for ER:LC Private Servers. Built with modularity, security, and performance in mind.
+A professional, enterprise-grade Discord bot designed for ER:LC Private Servers. Built with modularity, security, and the latest **ERLC API V2** at its core.
+
+---
+
+## 🎧 Support & Community
+
+Need real-time assistance or want to join the community?
+**[Join our Discord Support Server](https://discord.gg/zYvqDB5MWB)**
 
 ---
 
 ## ✨ Features
 
-- **🚀 ERLC API V2 Integration**: Real-time server info, players, logs, and in-game commands.
-- **🛡️ Advanced Security**: Global rate limiting, and private owner management.
-- **💾 Local Database**: SQLite integration (`better-sqlite3`) for high-performance settings and log persistence.
-- **⚙️ Dynamic Configuration**: Manage every aspect of the bot via `/config` without restarting.
-- **👔 Professional Branding**: Dynamic embeds, timestamps, and high-fidelity logging.
-- **🎫 Robust Modules**: Ticket systems, Giveaways, Custom Commands, and multi-channel logging.
+- **🚀 ERLC API V2 (Optimized)**: Real-time status, postal location tracking, wanted-star detection, and vehicle plate lookups—all via a single-endpoint polling system for maximum efficiency.
+- **🛡️ Secure Persistence**: High-performance local SQLite database (`better-sqlite3`) ensures your data stays on your machine, not in the cloud.
+- **⚙️ Dynamic Management**: A powerful `/config` command system allows owners to update API keys, channel IDs, and role permissions without reboots.
+- **👔 Executive Branding**: High-fidelity embeds, auto-updating SSU counters, and professional console logging.
+- **🎫 Feature Suite**: Advanced Ticket transcripts, Button-based Giveaways, and comprehensive forensic logging.
 
 ---
 
@@ -23,7 +30,7 @@ A professional, enterprise-grade Discord bot designed for ER:LC Private Servers.
 
 ### 1. Requirements
 - Node.js 18.x or higher
-- An ER:LC Private Server with an API Key
+- An ER:LC Private Server API Key
 
 ### 2. Installation
 ```bash
@@ -36,18 +43,10 @@ npm install
 ```
 
 ### 3. Configuration
-Rename `.env.example` to `.env` and fill in your credentials:
-```env
-BOT_TOKEN=your_token
-CLIENT_ID=your_id
-GUILD_ID=your_guild
-SECRET_DEVELOPER_ID=985444871722631199
-SERVER_OWNER_ID=your_owner_id
-```
+Rename `.env.example` to `.env` and enter your IDs. The rest can be configured via `/config` once the bot is live.
 
 ### 4. Launch
 ```bash
-# Start the bot
 npm start
 ```
 
@@ -59,18 +58,15 @@ npm start
 src/
 ├── commands/     # Slash & Prefix commands
 ├── events/       # Discord event listeners
-├── handlers/     # Core system loaders
-└── utils/        # ERLC API, Database, Security, Embeds
+├── handlers/     # Loaders (Command, Slash, Events)
+└── utils/        # Core Utilities (DB, API, Security, Branding)
 database.db       # Local SQLite storage
 ```
 
 ## 📜 Credits & License
-This project is maintained by **SEJED-DEV**.
--   **License**: Custom MIT (Free for all with attribution).
--   **Credits**: Use the `/credits` command in-app to view contributors.
-
-## 🤝 Support
-For community support and updates, join our [Discord Server](https://discord.gg/zYvqDB5MWB).
+Maintained and authored by **SEJED-DEV**.
+-   **License**: [MIT License](LICENSE.md) (Free for use with attribution).
+-   **Attribution**: Maintain the `/credits` and `/support` commands visible.
 
 ---
 
