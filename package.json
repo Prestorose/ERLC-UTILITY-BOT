@@ -1,0 +1,17 @@
+{
+  "name": "custom-utility-bot",
+  "version": "1.0.0",
+  "description": "Professional Discord Utility Bot for ERLC communities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "chalk": "^4.1.2",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  }
+}
