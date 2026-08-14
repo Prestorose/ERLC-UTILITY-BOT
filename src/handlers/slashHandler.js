@@ -10,6 +10,10 @@ function loadSlashCommands(client) {
 
     for (const file of commandFiles) {
         const command = require(path.join(commandsPath, file));
+        if (!command?.data) {
+            logger.warn(`Skipping ${file}: missing command data`);
+            continue;
+        }
         client.slashCommands.set(command.data.name, command);
     }
     logger.info(`Loaded ${client.slashCommands.size} slash commands`);
